@@ -1,0 +1,219 @@
+/* BODY + M/P */
+body {
+  background-color: #fff;
+}
+
+*{padding:0;
+margin:0;}
+
+
+/* ----- CHESS GAME ------ */
+/* CONTAINER */
+.container {
+  width: 700px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+   justify-content: center;
+
+}
+
+
+/* BORDERS */
+.borders {  position: absolute;
+width:700px;
+height:700px;
+margin: 0 auto;
+}
+
+.border-x {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  }
+
+.border-x span {
+  width: 80px;
+  height: 31px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.border-y {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  list-style: none;
+z-index: 1;
+
+}
+
+.border-y span {
+  width: 30px;
+  height: 80px;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* CHESS BOARD */
+
+.chess {
+  z-index:9;
+  width:640px;
+  height:640px;
+  background-image: url(chessboard.png);
+      background-repeat:repeat;
+      background-position: center;
+
+}
+.chessboard {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: repeat(8,80px);
+  grid-template-rows: repeat(8, 80px);
+  grid-template-areas:
+                        'A8 B8 C8 D8 E8 F8 G8 H8'
+                        'A7 B7 C7 D7 E7 F7 G7 H7'
+                        'A6 B6 C6 D6 E6 F6 G6 H6'
+                        'A5 B5 C5 D5 E5 F5 G5 H5'
+                        'A4 B4 C4 D4 E4 F4 G4 H4'
+                        'A3 B3 C3 D3 E3 F3 G3 H3'
+                        'A2 B2 C2 D2 E2 F2 G2 H2'
+                        'A1 B1 C1 D1 E1 F1 G1 H1'
+                        ;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.chessboard img {width:50px;
+  z-index: 1;
+  margin: 14% auto;
+ display: block;
+}
+
+/* ------ CHESS PIECES ------ */
+/* black pieces line 1 */
+.rook_b {
+    grid-area: A8;
+}
+
+.knight_b {
+    grid-area: B8;
+}
+
+.bishop_b1 {
+    grid-area: C8;
+}
+
+.queen_b {
+    grid-area: D8;
+}
+
+.king_b {
+    grid-area: E8;
+}
+
+.bishop_b2 {
+    grid-area: F8;
+}
+.knight_b2 {
+    grid-area: G8;
+}
+.rook_b2 {
+    grid-area: H8;
+}
+
+/* black pieces line 2 */
+.pawn_b1 {
+    grid-area: A7;
+}
+
+.pawn_b2 {
+    grid-area: B7;
+}
+
+.pawn_b3 {
+    grid-area: C7;
+}
+
+.pawn_b4 {
+    grid-area: D7;
+}
+
+.pawn_b5 {
+    grid-area: E7;
+}
+.pawn_b6 {
+    grid-area: F7;
+}
+.pawn_b7 {
+    grid-area: G7;
+}
+
+.pawn_b8 {
+    grid-area: H7;
+}
+
+/* white pieces line 1 */
+.rook_w {
+    grid-area: A1;
+}
+
+.knight_w {
+    grid-area: B1;
+}
+
+.bishop_w1 {
+    grid-area: C1;
+}
+
+.queen_w {
+    grid-area: D1;
+}
+
+.king_w {
+    grid-area: E1;
+}
+
+.bishop_w2 {
+    grid-area: F1;
+}
+.knight_w2 {
+    grid-area: G1;
+}
+.rook_w2 {
+    grid-area: H1;
+}
+
+/* white pieces line 2 */
+.pawn_w1 {
+    grid-area: A2;
+}
+
+.pawn_w2 {
+    grid-area: B2;
+}
+
+.pawn_w3 {
+    grid-area: C2;
+}
+
+.pawn_w4 {
+    grid-area: D2;
+}
+
+.pawn_w5 {
+    grid-area: E2;
+}
+.pawn_w6 {
+    grid-area: F2;
+}
+.pawn_w7 {
+    grid-area: G2;
+}
+
+.pawn_w8 {
+    grid-area: H2;
+}
